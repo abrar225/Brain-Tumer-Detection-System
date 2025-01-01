@@ -80,3 +80,4 @@ Would you like me to:
 1. Add specific deployment instructions?
 2. Include sample API curl commands?
 3. Create a more detailed contributing guide?
+- [2025-01-01T10:48:40] docs(readme): improve documentation notes and usage guidelines
