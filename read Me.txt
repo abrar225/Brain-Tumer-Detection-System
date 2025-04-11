@@ -1,0 +1,9 @@
+step : 1 first open cmd(Command Prompt) 
+step : 2 copy this 1 and 2 command 
+step : 3 first paste 1 command and install all the package's
+step : 4 second paste 2 command and install all the package's 
+step : 5 now oprn code editior and run main.py
+
+1) pip install flask tensorflow pillow numpy
+
+2) pip install scipy tensorflow pillow numpy h5py
