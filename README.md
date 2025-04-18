@@ -80,14 +80,4 @@ Would you like me to:
 1. Add specific deployment instructions?
 2. Include sample API curl commands?
 3. Create a more detailed contributing guide?
-- [2025-01-01T10:48:40] docs(readme): improve documentation notes and usage guidelines
-- [2025-01-20T10:25:10] docs(readme): improve documentation notes and usage guidelines
-- [2025-02-24T11:47:19] docs(readme): improve documentation notes and usage guidelines
-- [2025-05-21T15:08:46] style: enhance README formatting and badge definitions
-- [2025-09-16T22:21:56] docs(readme): improve documentation notes and usage guidelines
-- [2025-11-14T16:13:15] docs(readme): improve documentation notes and usage guidelines
-- [2026-01-23T11:48:11] style: enhance README formatting and badge definitions
-- [2026-03-20T17:54:24] style: enhance README formatting and badge definitions
-- [2026-04-10T14:55:50] docs(readme): improve documentation notes and usage guidelines
-- [2026-05-28T14:27:20] style: enhance README formatting and badge definitions
-- [2026-07-28T22:44:04] style: enhance README formatting and badge definitions
+<!-- [2025-04-18T18:22:27] docs(readme): update project documentation and overview -->
