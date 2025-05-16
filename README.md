@@ -82,3 +82,4 @@ Would you like me to:
 3. Create a more detailed contributing guide?
 <!-- [2025-04-18T18:22:27] docs(readme): update project documentation and overview -->
 <!-- [2025-04-22T13:28:38] style: improve formatting and badge alignment -->
+<!-- [2025-05-16T18:28:19] style: improve formatting and badge alignment -->
