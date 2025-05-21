@@ -83,3 +83,4 @@ Would you like me to:
 - [2025-01-01T10:48:40] docs(readme): improve documentation notes and usage guidelines
 - [2025-01-20T10:25:10] docs(readme): improve documentation notes and usage guidelines
 - [2025-02-24T11:47:19] docs(readme): improve documentation notes and usage guidelines
+- [2025-05-21T15:08:46] style: enhance README formatting and badge definitions
