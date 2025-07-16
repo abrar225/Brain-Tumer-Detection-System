@@ -1,3 +1,4 @@
 - [2025-02-25T10:08:39] docs: update local setup and development workflow steps
 - [2025-05-14T14:13:21] docs: update local setup and development workflow steps
 - [2025-06-02T09:21:38] docs: update local setup and development workflow steps
+- [2025-07-16T11:24:56] docs: update local setup and development workflow steps
