@@ -88,3 +88,4 @@ Would you like me to:
 <!-- [2025-09-28T10:42:39] style: improve formatting and badge alignment -->
 <!-- [2025-10-05T10:37:08] docs(readme): update project documentation and overview -->
 <!-- [2025-12-22T15:48:40] style: improve formatting and badge alignment -->
+<!-- [2025-12-24T16:17:39] docs(readme): update project documentation and overview -->
