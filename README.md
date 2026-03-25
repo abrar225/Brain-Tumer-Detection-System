@@ -93,3 +93,4 @@ Would you like me to:
 <!-- [2026-03-02T15:15:15] docs(readme): update project documentation and overview -->
 <!-- [2026-03-16T18:50:09] style: improve formatting and badge alignment -->
 <!-- [2026-03-24T14:29:41] style: improve formatting and badge alignment -->
+<!-- [2026-03-25T16:41:42] docs(readme): update project documentation and overview -->
