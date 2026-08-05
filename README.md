@@ -105,3 +105,4 @@ Would you like me to:
 <!-- [2026-06-26T22:14:12] docs(readme): update project documentation and overview -->
 <!-- [2026-06-30T11:17:27] docs(readme): update project documentation and overview -->
 <!-- [2026-07-17T17:08:46] docs(readme): update project documentation and overview -->
+<!-- [2026-08-05T09:17:03] style: improve formatting and badge alignment -->
