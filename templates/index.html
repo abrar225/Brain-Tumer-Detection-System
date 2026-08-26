@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Brain Tumor Detection</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="dark-theme">
+    <!-- Animated Background Elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="ph ph-brain"></i>
+                <span>NeuroScan AI</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="hero-section text-center">
+                <h1 class="gradient-text">Advanced MRI Analysis</h1>
+                <p class="subtitle">Upload an MRI scan to instantly detect and classify brain tumors with our state-of-the-art AI model.</p>
+            </div>
+
+            <!-- Upload Card -->
+            <div class="glass-card upload-card">
+                <form method="POST" enctype="multipart/form-data" id="upload-form">
+                    <div class="drop-zone" id="drop-zone">
+                        <i class="ph ph-upload-simple upload-icon"></i>
+                        <h3>Drag & Drop MRI Scan</h3>
+                        <p>or click to browse files</p>
+                        <input type="file" id="file-input" name="file" accept="image/*" required>
+                    </div>
+                    
+                    <!-- Image Preview Area -->
+                    <div class="preview-container" id="preview-container" style="display: none;">
+                        <img id="image-preview" src="" alt="Preview">
+                        <button type="button" class="btn btn-secondary mt-2" id="remove-btn">
+                            <i class="ph ph-trash"></i> Remove
+                        </button>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary analyze-btn mt-3" id="analyze-btn" disabled>
+                        <i class="ph ph-scan"></i> Analyze Scan
+                    </button>
+                </form>
+            </div>
+
+            <!-- Loading Spinner (Hidden initially) -->
+            <div class="loading-state" id="loading-state" style="display: none;">
+                <div class="spinner"></div>
+                <p>AI is analyzing the scan...</p>
+            </div>
+
+            <!-- Results Section -->
+            {% if result %}
+            <div class="glass-card results-card" id="results-card">
+                <div class="results-header">
+                    <h2>Analysis Results</h2>
+                    {% if result == 'No Tumor' %}
+                        <div class="status badge-success"><i class="ph ph-check-circle"></i> Clean</div>
+                    {% else %}
+                        <div class="status badge-danger"><i class="ph ph-warning-circle"></i> Detected</div>
+                    {% endif %}
+                </div>
+                
+                <div class="results-body">
+                    <div class="result-image">
+                        <img src="{{ file_path }}" alt="Analyzed MRI">
+                        <div class="scan-line"></div>
+                    </div>
+                    
+                    <div class="result-details">
+                        <div class="detail-item">
+                            <span class="label">Classification</span>
+                            <span class="value highlight">{{ result }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">AI Confidence</span>
+                            <div class="confidence-bar-container">
+                                <div class="confidence-bar" style="width: {{ confidence }}"></div>
+                            </div>
+                            <span class="value">{{ confidence }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Model</span>
+                            <span class="value">EfficientNetB0 (Transfer Learning)</span>
+                        </div>
+                        
+                        <a href="/" class="btn btn-outline mt-4">
+                            <i class="ph ph-arrow-counter-clockwise"></i> Analyze Another
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Scroll to results automatically if they exist
+                document.getElementById('results-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            </script>
+            {% endif %}
+        </main>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

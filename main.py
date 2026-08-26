@@ -10,8 +10,8 @@ app = Flask(__name__)
 # Load the trained model
 model = load_model('models/model.h5')
 
-# Class labels
-class_labels = ['pituitary', 'glioma', 'notumor', 'meningioma']
+# Class labels (Alphabetical based on ImageDataGenerator)
+class_labels = ['glioma', 'meningioma', 'notumor', 'pituitary']
 
 # Define the uploads folder
 UPLOAD_FOLDER = './uploads'
@@ -22,7 +22,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Helper function to predict tumor type
 def predict_tumor(image_path):
-    IMAGE_SIZE = 128
+    IMAGE_SIZE = 224
     img = load_img(image_path, target_size=(IMAGE_SIZE, IMAGE_SIZE))
     img_array = img_to_array(img) / 255.0  # Normalize pixel values
     img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
