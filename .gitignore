@@ -87,8 +87,6 @@ ENV/
 *.swo
 
 # Custom Project Ignores
-models/*.h5
-!models/.gitkeep
 Brain_Tumor_Data/
 uploads/*
 !uploads/.gitkeep
